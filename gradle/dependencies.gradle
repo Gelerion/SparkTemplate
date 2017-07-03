@@ -1,0 +1,18 @@
+ext {
+    versions = [
+            spark: '2.1.1',
+            spark_scala: "2.11",
+            scala: "2.11.8",
+    ]
+
+    libraries = [
+            spark: "org.apache.spark:spark-core_$versions.spark_scala:$versions.spark",
+            sparkGraphX: "org.apache.spark:spark-graphx_$versions.spark_scala:$versions.spark",
+            sparkMlLib: "org.apache.spark:spark-mllib_$versions.spark_scala:$versions.spark",
+            scala: [
+                    "org.scala-lang:scala-library:$versions.scala",
+                    "org.scala-lang:scala-reflect:$versions.scala",
+                    "org.scala-lang:scala-compiler:$versions.scala"
+            ]
+    ]
+}
